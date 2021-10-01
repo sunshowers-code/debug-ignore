@@ -46,11 +46,12 @@ field.
 
 ## Optional features
 
-`serde1`: `serde` support with `#[serde(transparent)]`.
+`serde`: `serde` support with `#[serde(transparent)]`.
 
 ## Rust version support
 
-The MSRV is **Rust 1.0.** This crate is too trivial to require anything more recent.
+The MSRV is **Rust 1.34** though this crate likely builds with older versions. This crate is
+too trivial to require anything more recent.
 
 Optional
 
