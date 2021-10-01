@@ -52,7 +52,7 @@
 //! The MSRV is **Rust 1.34** though this crate likely builds with older versions. This crate is
 //! too trivial to require anything more recent.
 //!
-//! Optional
+//! Optional features may require newer versions of Rust.
 //!
 //! # Alternatives
 //!
