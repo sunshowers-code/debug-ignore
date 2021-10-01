@@ -11,6 +11,7 @@ printing out `Debug` output.
 use debug_ignore::DebugIgnore;
 
 // Some structs have many fields with large `Debug` implementations.
+#[derive(Debug)]
 struct InnerStructWithLotsOfDebugInfo {
     field: &'static str,
     // ...
