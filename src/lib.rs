@@ -70,7 +70,7 @@ use std::{
 /// A newtype wrapper that causes the field within to be ignored while printing out `Debug` output.
 ///
 /// For more, see the [crate documentation](self).
-#[derive(Copy, Clone, Eq, Hash, Ord, PartialEq, PartialOrd)]
+#[derive(Copy, Clone, Default, Eq, Hash, Ord, PartialEq, PartialOrd)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[repr(transparent)]
 #[cfg_attr(feature = "serde", serde(transparent))]
