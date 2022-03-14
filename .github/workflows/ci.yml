@@ -64,10 +64,9 @@ jobs:
         with:
           toolchain: ${{ matrix.rust-version }}
           override: true
-
-      # Build all packages we care about one by one to ensure feature unification
-      # doesn't happen.
-      # Build all targets to ensure examples are built as well.
+      - name: Use pinned Cargo.lock for Rust 1.34
+        if: matrix.rust-version = "1.34"
+        run: cp Cargo.lock.rust134 Cargo.lock
       - name: Build
         uses: actions-rs/cargo@v1
         with:
