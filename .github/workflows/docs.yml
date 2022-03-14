@@ -22,6 +22,7 @@ jobs:
           args: --all-features
       - name: Organize
         run: |
+          rm -rf target/gh-pages
           mkdir target/gh-pages
           mv target/doc target/gh-pages/rustdoc
       - name: Deploy
