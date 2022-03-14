@@ -24,6 +24,7 @@ jobs:
         with:
           toolchain: stable
           components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@f8f67b7515e98e4ac991ccb5c11240861e0f712b
       - name: Lint (clippy)
         uses: actions-rs/cargo@v1
         with:
@@ -64,6 +65,7 @@ jobs:
         with:
           toolchain: ${{ matrix.rust-version }}
           override: true
+      - uses: Swatinem/rust-cache@f8f67b7515e98e4ac991ccb5c11240861e0f712b
       - name: Use pinned Cargo.lock for Rust 1.34
         if: ${{ matrix.rust-version == 1.34 }}
         run: cp Cargo.lock.rust134 Cargo.lock

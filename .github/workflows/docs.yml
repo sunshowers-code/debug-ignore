@@ -14,6 +14,7 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
+      - uses: Swatinem/rust-cache@f8f67b7515e98e4ac991ccb5c11240861e0f712b
       - name: Build rustdoc
         uses: actions-rs/cargo@v1
         with:
