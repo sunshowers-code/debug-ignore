@@ -61,7 +61,9 @@
 //! * [`derivative`](https://crates.io/crates/derivative) has greater control over the behavior of
 //!   `Debug` impls, at the cost of a compile-time proc-macro dependency.
 
-use std::{
+#![no_std]
+
+use core::{
     fmt,
     ops::{Deref, DerefMut},
     str::FromStr,
