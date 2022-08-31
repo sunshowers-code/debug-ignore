@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.3] - 2022-08-30
+
+### Added
+
+- This crate is now compatible with no-std ([#2]). Thanks [Finomnis] for your first contribution!
+
+[#2]: https://github.com/sunshowers-code/debug-ignore/pull/2
+[Finomnis]: https://github.com/Finomnis
+
 ## [1.0.2] - 2022-03-17
 
 ### Added
