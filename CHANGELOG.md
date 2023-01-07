@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4] - 2023-01-07
+
+### Added
+
+- Add a `From` impl for `DebugIgnore` ([#3]).
+
+[#3]: https://github.com/sunshowers-code/debug-ignore/issues/3
+
 ## [1.0.3] - 2022-08-30
 
 ### Added
@@ -22,5 +30,7 @@
 
 - Initial version.
 
+[1.0.4]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.4
+[1.0.3]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.3
 [1.0.2]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.2
 [1.0.1]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.1
