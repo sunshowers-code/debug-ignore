@@ -24,7 +24,9 @@
 //! impl PublicStruct {
 //!     pub fn new() -> Self {
 //!         Self {
-//!             inner: DebugIgnore(InnerStructWithLotsOfDebugInfo { field: "field", /* ... */ })
+//!             // DebugIgnore<T> has a `From<T>` impl for the inner type; you can also construct
+//!             // one explicitly.
+//!             inner: InnerStructWithLotsOfDebugInfo { field: "field", /* ... */ }.into(),
 //!         }
 //!     }
 //! }
