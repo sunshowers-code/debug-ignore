@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.5] - 2023-01-07
+
+### Fixed
+
+- Fixed link to documentation off of main in readme.
+
 ## [1.0.4] - 2023-01-07
 
 ### Added
@@ -30,6 +36,7 @@
 
 - Initial version.
 
+[1.0.5]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.5
 [1.0.4]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.4
 [1.0.3]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.3
 [1.0.2]: https://github.com/sunshowers-code/debug-ignore/releases/tag/1.0.2
