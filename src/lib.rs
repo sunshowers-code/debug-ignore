@@ -90,6 +90,13 @@ impl<T: ?Sized> fmt::Debug for DebugIgnore<T> {
 // Other trait impls
 // ---
 
+impl<T> From<T> for DebugIgnore<T> {
+    #[inline]
+    fn from(t: T) -> Self {
+        Self(t)
+    }
+}
+
 impl<T: ?Sized> Deref for DebugIgnore<T> {
     type Target = T;
 
